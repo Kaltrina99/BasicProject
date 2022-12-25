@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    
+}
+
+<div class="text-center">
+            @foreach (var item in Model.b)
+            {
+                <div class="alert alert-primary" role="alert">
+                    <p>Name: @item.Name ~ ID: @item.ID ~ IsActive: @item.Active</p>
+                </div>
+            }
+</div>
